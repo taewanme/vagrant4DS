@@ -2,7 +2,7 @@
 
 I create a data science environment on vagrant for study and testing with Python.
 With this vagrant, we make a virtualbox vm - Ubuntu 16.04.
-The VM has some python based softwares that is the most popular python components.
+In the VM, Several python modules are installed that are the most popular python components.
 
 I reference a article - [15 Python Libraries for Data Science](https://www.upwork.com/hiring/data/15-python-libraries-data-science/)
 
