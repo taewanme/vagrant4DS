@@ -39,8 +39,8 @@ Installed softwares in the box are following
 - git, Vagrant and Virtualbox should be installed in target host OS.
 
 ### Building Vagrant Box
-- Clone repository from github/taewanme
-- Build image of vagrant from Vagrantfile
+- Cloning repository from github/taewanme
+- Building image of vagrant from Vagrantfile
    - build time: about 10minute
 
 ```bash
