@@ -52,19 +52,46 @@ Installed softwares are following
 - login into the vagrant box
 
 ```bash
-> vagrant ssh
+taewan@vagrant4DS $vagrant ssh
+Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-43-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Sun Oct 16 11:49:00 2016 from 10.0.2.2
+ubuntu@ubuntu-xenial:~$
 '''
 
 - startup of jupyter in the vagrant box
 
 ```bash
 ubuntu@ubuntu-xenial:~$ ./jupyter.sh
-[I 10:22:20.197 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
-[W 10:22:20.205 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
-[W 10:22:20.205 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using authentication. This is highly insecure and not recommended.
-[I 10:22:20.209 NotebookApp] Serving notebooks from local directory: /vagrant/ipythons
-[I 10:22:20.209 NotebookApp] 0 active kernels
-[I 10:22:20.209 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:9999/
-[I 10:22:20.210 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[I 10:22:45.187 NotebookApp] 302 GET / (192.168.33.1) 0.67ms
+ubuntu@ubuntu-xenial:~$ nohup: redirecting stderr to stdout
+
+ubuntu@ubuntu-xenial:~$
 ```
+
+- Access of Jupyter from Host Browser
+  - URL: http://192.168.33.33:9999
+  - location of Ipython files
+    -  in the vagrant image: /vagrant/ipythons
+    -  in the host os: <vagrant_box_home>/ipythons
+
+- example notebook
+
+  - Step 01: Access into Jupyter Service from Host OS.
+  ![](./images/step01.jpg)
+
+  - Step 02: Creating Notebook of python2
+  ![](./images/step02.jpg)
+
+  - Step 03: Python Code with matplotlib, scipy and numpy
+  ![](./images/step03.jpg)
