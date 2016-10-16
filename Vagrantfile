@@ -45,6 +45,7 @@ Vagrant.configure("2") do |config|
       sudo pip install NetworkX
       sudo cp /vagrant/jupyter.sh ./
       sudo chmod 777 ./jupyter.sh
-      sudo mkdir -rf /vagrant/ipython
+      sudo mkdir -p /vagrant/ipythons
+      sudo chmod 755 /vagrant/ipythons
     SHELL
 end

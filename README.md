@@ -34,6 +34,35 @@ Installed softwares are following
 
 
 # commands for quickstart
+
+- Precondition
+  - git, Vagrant and Virtualbox should be installed in target host OS.
+
+- Building Vagrant Box
+  - Clone repository from github/taewanme
+  - Build image of vagrant from Vagrantfile
+    - build time: about 10minute
+
+```bash
+> git clone git@github.com:taewanme/vagrant4DS.git
+> cd vagrant4DS
+> vagrant up
 ```
 
+- login into the vagrant box
+```bash
+> vagrant ssh
+
+- startup of jupyter in the vagrant box
+
+```bash
+ubuntu@ubuntu-xenial:~$ ./jupyter.sh
+[I 10:22:20.197 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 10:22:20.205 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[W 10:22:20.205 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using authentication. This is highly insecure and not recommended.
+[I 10:22:20.209 NotebookApp] Serving notebooks from local directory: /vagrant/ipythons
+[I 10:22:20.209 NotebookApp] 0 active kernels
+[I 10:22:20.209 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:9999/
+[I 10:22:20.210 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 10:22:45.187 NotebookApp] 302 GET / (192.168.33.1) 0.67ms
 ```
