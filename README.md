@@ -50,8 +50,10 @@ Installed softwares are following
 ```
 
 - login into the vagrant box
+
 ```bash
 > vagrant ssh
+'''
 
 - startup of jupyter in the vagrant box
 
