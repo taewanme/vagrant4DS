@@ -4,6 +4,9 @@ I create a data science environment on vagrant for study and testing with Python
 With this vagrant, we make a virtualbox vm - Ubuntu 16.04.
 The VM has some python based softwares that is the most popular python components.
 
+I reference a article - [15 Python Libraries for Data Science](https://www.upwork.com/hiring/data/15-python-libraries-data-science/)
+
+
 Installed softwares are following
 
 - python (2.7)
@@ -29,7 +32,6 @@ Installed softwares are following
 - tensorflow (0.11.0rc0)
 - virtualenv (15.0.3)
 
-I reference a article - (15 Python Libraries for Data Science)[https://www.upwork.com/hiring/data/15-python-libraries-data-science/]
 
 # commands for quickstart
 ```

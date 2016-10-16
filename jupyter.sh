@@ -1,1 +1,1 @@
-jupyter notebook --no-browser --ip='*' --notebook-dir='/vagrant/ipythons'
+jupyter notebook --no-browser --ip='*' --notebook-dir='/vagrant/ipythons' --port=9999
